@@ -1,0 +1,86 @@
+.header__titulo {
+    background-color: #171846;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: none;
+    text-align: center;
+}
+
+.header__nav {
+    padding: 0 1em;
+    display: flex;
+    background-color: #171846;
+    color: #fff;
+    align-items: center;
+    font-size: 1.5em;
+    position: sticky !important;
+    top: 0 !important;
+  }
+
+.capitulo h1 {
+    padding: 1em 1em;
+    background-color: #171846cc;
+    color: #fff;
+    text-align: center;
+}
+
+.capitulo article {
+    margin: 2em 0;
+}
+
+.capitulo img {
+    margin: 3em 0;
+}
+
+.menu__lateral {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999; /* ajuste a ordem de empilhamento conforme necessário */
+    width: 100%; /* opcional: define a largura do elemento */
+}
+  
+#menu-sticky {
+    position: sticky;
+    top: 0;
+}
+
+#button-menu {
+    color: #fff;
+    background-color: #fff;
+    border: #171846;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .menu__lateral {
+        display: block;
+        position: fixed;
+        top: 0px;
+        /* ajuste de acordo com sua necessidade */
+        left: 0;
+        width: 200px;
+        /* ajuste de acordo com sua necessidade */
+        height: calc(100% - 50px);
+        /* ajuste de acordo com sua necessidade */   
+    }
+
+    .conteudo{
+        position: fixed;
+        left: 201px;
+        height: calc(100%);
+        overflow-y: auto;
+    }
+    
+    .header__nav {
+        display: none;
+    }
+
+    #menu-sticky {
+        display: none;
+    }
+}
