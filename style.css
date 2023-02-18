@@ -55,6 +55,10 @@
     border: #171846;
 }
 
+.conteudo {
+    margin: 4em 0;
+}
+
 
 @media screen and (min-width: 1024px) {
     .menu__lateral {
@@ -70,6 +74,7 @@
     }
 
     .conteudo{
+        margin: 0;
         position: fixed;
         left: 201px;
         height: calc(100%);
